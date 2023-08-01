@@ -1,0 +1,20 @@
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = ["E", "F", "I", "UP"]
+ignore = ["D203"]
+show-source = true
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.pylint.messages_control]
+disable = "C0114,C0115,C0116"
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+pythonpath = ['src']
+markers = [
+    "only: mark a test to only run on a specific environment"
+]
