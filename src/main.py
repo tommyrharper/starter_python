@@ -20,6 +20,10 @@ def add(a, b):
     return a + b
 
 
+def div(a, b):
+    return a / b
+
+
 def main(folder: str, verbosity=False, quiet=False) -> int:
     """Do something
     @param folder: The folder to verify the blockchain in.
